@@ -1,0 +1,27 @@
+<style>
+  [itemtype="http://schema.org/ImageGallery"] {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  [itemtype="http://schema.org/ImageGallery"] figure {
+    text-align: center;
+  }
+  [itemtype="http://schema.org/ImageGallery"] figure a {
+    border-bottom: none;
+  }
+  [itemtype="http://schema.org/ImageGallery"] figure a:hover {
+    background-color: inherit;
+  }
+  [itemtype="http://schema.org/ImageGallery"] figure img {
+    transition: all .2s ease-in-out;
+  }
+  [itemtype="http://schema.org/ImageGallery"] figure img:hover {
+    transform: scale(1.025);
+  }
+  [itemprop="caption description"] {
+    font-size: small;
+  }
+</style>

@@ -1,0 +1,14 @@
+#!/bin/sh
+set -e
+
+SKIN_CSS_FILE=static/modules/hall-of-mirrors/default-skin.css
+BASE_URL=/modules/hall-of-mirrors/
+
+# Print error and exit 1 file not found
+if ! [ -f "$SKIN_CSS_FILE" ] ; then
+    echo "Error: Asset not found in $PWD/$SKIN_CSS_FILE." >&2; exit 1
+fi
+
+# Prefix filenames in url data types with baseurl
+# Note: Assumes file is not minified
+sed "s@url(\(.*\))@url($BASE_URL\1)@g" "$SKIN_CSS_FILE" | tee "$SKIN_CSS_FILE" >/dev/null

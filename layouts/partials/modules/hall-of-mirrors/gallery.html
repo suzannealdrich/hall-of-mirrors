@@ -1,0 +1,23 @@
+<div itemscope itemtype="http://schema.org/ImageGallery">
+  {{ range .Resources.Match "*gallery*" }}
+    {{ $thumbnail := .Resize (default "500x" (index .Params "thumb_size")) }}
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a data-size="{{ .Width }}x{{ .Height }}" href="{{ .RelPermalink }}" itemprop="contentUrl">
+        <img width="{{ div $thumbnail.Width 2 }}" height="{{ div $thumbnail.Height 2 }}" src="{{ $thumbnail.RelPermalink }}" itemprop="thumbnail" alt="{{ default (printf "%s thumbnail image" .Name) .Params.alt }}">
+      </a>
+      {{ partial "modules/hall-of-mirrors/meta.html" . }}
+      <figcaption itemprop="caption description">
+        {{ if .Params.meta.description }}
+          {{ .Params.meta.description }}
+        {{ else if ne (in .RelPermalink .Title) true }}
+          <span itemprop="name">{{ .Title }}</span>
+        {{ end }}
+        {{ if ne .Params.hide_credits true }}
+          {{ with .Params.meta.creator }}
+            <span>Photo by {{ . }}</span>
+          {{ end }}
+        {{ end }}
+      </figcaption>
+    </figure>
+  {{ end }}
+</div>

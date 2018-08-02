@@ -1,0 +1,32 @@
+<meta itemprop="width" content="{{ .Width }}">
+<meta itemprop="height" content="{{ .Height }}">
+{{ range $property, $value := .Params.meta }}
+  {{ if eq $property "keywords" }}
+    <meta itemprop="keywords" content="{{ delimit $value ", " }}">
+  {{ else if in (slice "creator" "position" "genere" "material" "version" "license") $property }}
+    <meta itemprop="{{ $property }}" content="{{ $value }}">
+  {{ end }}
+{{ end }}
+{{ if .Params.meta.format }}
+  <meta itemprop="encodingFormat" content="{{ .Params.meta.format }}">
+{{ else if eq .ResourceType "image" }}
+  {{ if (or (in .RelPermalink ".jpg") (in .RelPermalink ".jpeg")) }}
+    <meta itemprop="encodingFormat" content="image/jpeg">
+  {{ else if in .RelPermalink ".svg" }}
+    <meta itemprop="encodingFormat" content="image/svg+xml">
+  {{ else if in .RelPermalink ".webp" }}
+    <meta itemprop="encodingFormat" content="image/webp">
+  {{ else if in .RelPermalink ".png" }}
+    <meta itemprop="encodingFormat" content="image/png">
+  {{ else if in .RelPermalink ".gif" }}
+    <meta itemprop="encodingFormat" content="image/gif">
+  {{ else if in .RelPermalink ".bmp" }}
+    <meta itemprop="encodingFormat" content="image/bmp">
+  {{ else if in .RelPermalink ".ico" }}
+    <meta itemprop="encodingFormat" content="image/x-icon">
+  {{ else if (or (in .RelPermalink ".tif") (in .RelPermalink ".tiff")) }}
+    <meta itemprop="encodingFormat" content="image/tiff">
+  {{ end }}
+{{ else if in .RelPermalink ".bpg" }}
+  <meta itemprop="encodingFormat" content="https://bellard.org/bpg/">
+{{ end }}

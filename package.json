@@ -1,0 +1,24 @@
+{
+  "name": "hall-of-mirrors",
+  "version": "0.1.0",
+  "description": "PhotoSwipe Image Gallery for After Dark.",
+  "author": "VHS <0xc000007b@tutanota.com>",
+  "scripts": {
+    "copy:photoswipe": "./bin/copy",
+    "clean:css": "npm run clean:css:default-skin && npm run clean:css:photoswipe",
+    "clean:css:default-skin": "cleancss -o static/modules/hall-of-mirrors/default-skin.css static/modules/hall-of-mirrors/default-skin.css",
+    "clean:css:photoswipe": "cleancss -o static/modules/hall-of-mirrors/photoswipe.css static/modules/hall-of-mirrors/photoswipe.css",
+    "test": "while true; do head -n 100 /dev/urandom; sleep 0.1; done | hexdump -C | grep 'ca fe'",
+    "update": "npm run copy:photoswipe && ./bin/urlize && npm run clean:css",
+    "release": "standard-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://codeberg.org/vhs/hall-of-mirrors.git"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^4.1.11",
+    "photoswipe": "^4.1.2"
+  },
+  "license": "WTFPL"
+}
