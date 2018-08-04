@@ -26,8 +26,8 @@ If you're hosting your site from a subdirectory (e.g. `example.com/blog/`) you'l
 3. Add and specify settings for the module in your After Dark site config, e.g.
 
     ```toml
-    [params.modules.fractal_forest]
-      enabled = true # Required in version 1.0
+    [params.modules.hall_of_mirrors]
+      enabled = true # Required in version 0.1.0
     ```
 
 4. Create a [Leaf Bundle] to group image resources you wish to display in a PhotoSwipe gallery together with your content.
