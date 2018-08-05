@@ -7,9 +7,16 @@
 [![Minimum After Dark version](https://img.shields.io/badge/after%20dark->%3D%205.4.0-000000.svg?style=flat-square)](https://codeberg.org/vhs/after-dark/)
 [![WTFPL licensed](https://img.shields.io/npm/l/hall-of-mirrors.svg?style=flat-square&longCache=true)](https://codeberg.org/vhs/hall-of-mirrors/src/branch/master/COPYING)
 
+## Demo
+
+<video controls>
+  <source src="https://vhs.keybase.pub/after-dark-hall-of-mirrors-demo.mp4" type="video/mp4">
+  <p>Your browser doesn't support HTML5 video. Here is a <a href="https://vhs.keybase.pub/after-dark-hall-of-mirrors-demo.mp4">link to the video</a> instead.</p>
+</video>
+
 ## Setup
 
-If you're hosting your site from a subdirectory (e.g. `example.com/blog/`) you'll need to update the url types in `default-skin.css` to point to your blog. A script called `urlize` has been provided to facilitate this change. If images are encoded and inlined into `default-skin.css` using data uris this change will no longer be required.
+None requried unless you're hosting your site from a subdirectory (e.g. `example.com/blog/`). If so you'll need to update the url types in `default-skin.css` to point to your base url. A script called `urlize` has been provided to facilitate this change.
 
 ## Installation
 
