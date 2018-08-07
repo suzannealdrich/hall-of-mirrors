@@ -11,7 +11,7 @@
 
 <video controls>
   <source src="https://vhs.keybase.pub/after-dark-hall-of-mirrors-demo.mp4" type="video/mp4">
-  <p>Your browser doesn't support HTML5 video. Here is a <a href="https://vhs.keybase.pub/after-dark-hall-of-mirrors-demo.mp4">link to the video</a> instead.</p>
+  <p>Your browser doesn't support HTML5 video. Here is a <a href="https://vhs.keybase.pub/after-dark-hall-of-mirrors-demo.mp4">link to the video</a> instead. Ref: <a href="https://github.com/go-gitea/gitea/issues/3845">gitea/issues/3845</a></p>
 </video>
 
 ## Setup
