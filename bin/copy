@@ -13,6 +13,7 @@ fi
 mkdir -p "$TARGET_DIR"
 
 # Define required assets
+# See https://stackoverflow.com/a/51683629/712334 for recursive globbing
 files=(
    "$ASSETS_DIR"/*.min.js
    "$ASSETS_DIR"/*.css
