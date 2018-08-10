@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.1"></a>
+## 0.1.1 (2018-08-10)
+
+
+### Bug Fixes
+
+* remove hardcoded script ([c2bc587](https://codeberg.org/vhs/hall-of-mirrors/commits/c2bc587))
+* tighten spacing between thumbs ([2f6129d](https://codeberg.org/vhs/hall-of-mirrors/commits/2f6129d))
+
+
+
 <a name="0.1.0"></a>
 # 0.1.0 (2018-08-04)
 
