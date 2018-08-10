@@ -4,7 +4,7 @@
 
 [![Latest NPM version](https://img.shields.io/npm/v/hall-of-mirrors.svg?style=flat-square)](https://www.npmjs.com/package/hall-of-mirrors)
 [![NPM downloads per month](https://img.shields.io/npm/dm/hall-of-mirrors.svg?style=flat-square)](https://www.npmjs.com/package/hall-of-mirrors)
-[![Minimum After Dark version](https://img.shields.io/badge/after%20dark->%3D%205.4.0-000000.svg?style=flat-square)](https://codeberg.org/vhs/after-dark/)
+[![Minimum After Dark version](https://img.shields.io/badge/after%20dark->%3D%205.5.0-000000.svg?style=flat-square)](https://codeberg.org/vhs/after-dark/)
 [![WTFPL licensed](https://img.shields.io/npm/l/hall-of-mirrors.svg?style=flat-square&longCache=true)](https://codeberg.org/vhs/hall-of-mirrors/src/branch/master/COPYING)
 
 ## Demo
