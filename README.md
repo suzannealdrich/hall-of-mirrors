@@ -11,12 +11,12 @@
 
 <video controls>
   <source src="https://vhs.keybase.pub/after-dark-hall-of-mirrors-demo.mp4" type="video/mp4">
-  <p>Your browser doesn't support HTML5 video. Here is a <a href="https://vhs.keybase.pub/after-dark-hall-of-mirrors-demo.mp4">link to the video</a> instead. Ref: <a href="https://github.com/go-gitea/gitea/issues/3845">gitea/issues/3845</a></p>
+  <p>Your browser doesn't support HTML5 video. Here is a <a href="https://vhs.keybase.pub/after-dark-hall-of-mirrors-demo.mp4">link to the video</a> instead. Ref: <a href="https://discourse.gitea.io/t/embedding-videos-in-readmes/494">embedding-videos-in-readmes</a></p>
 </video>
 
 ## Setup
 
-None requried unless you're hosting your site from a subdirectory (e.g. `example.com/blog/`). If so you'll need to update the url types in `default-skin.css` to point to your base url. A script called `urlize` has been provided to facilitate this change.
+None required, unless you're hosting your site root from a path including a `/` such as `domain.example/blog/`. If so, update the [url data types](https://devdocs.io/css/url) in `default-skin.css` to include the full path. Use the included `bin/urlize` script to facilitate this change.
 
 ## Installation
 
@@ -34,26 +34,28 @@ None requried unless you're hosting your site from a subdirectory (e.g. `example
 
     ```toml
     [params.modules.hall_of_mirrors]
-      enabled = true # Required in version 0.1.0
+      enabled = true # Required in version 0.1.x
     ```
 
-4. Create a [Leaf Bundle] to group image resources you wish to display in a PhotoSwipe gallery together with your content.
-5. [Configure the gallery](#configuration) to your liking.
+4. Create a [Leaf Bundle] for your images and content.
+5. [Configure](#configuration) the content to reference the images.
 6. Build and deploy your After Dark site.
 
 ## Configuration
 
-To display a gallery add the [Page Resources] you wish to display to your [Leaf Bundle] and configure your front matter.
+To display a gallery add the [Page Resources] you wish to display to your [Leaf Bundle] and configure your front matter as shown.
 
 ### Minimal
 
-The following is all you need to display a basic gallery. Seriously.
+Display a gallery for all JPEG images in the page bundle:
 
 ```toml
 [[resources]]
   src = "**.jpg" # Display any jpeg image in the leaf bundle
   name = "gallery" # Name must include the word 'gallery'
 ```
+
+Display a gallery for images in a specific bundle subdirectory:
 
 ```toml
 [[resources]]
@@ -63,7 +65,7 @@ The following is all you need to display a basic gallery. Seriously.
 
 ### Extended
 
-If you want to add captions and enhance SEO you can configure individual resources.
+Add captions and enhance SEO by configuring individual resources:
 
 ```toml
 [[resources]]
@@ -96,10 +98,10 @@ If you want to add captions and enhance SEO you can configure individual resourc
   src = "images/gallery/**.jpg"
   name = "Nature gallery"
   [resources.params.meta]
-    genere = "digital" # Set a genere for all image resources
+    genre = "digital" # Set genre meta for all gallery images
 ```
 
-This should get you started. Expect some breaking changes as the development is completed.
+This should get you started. Expect some breaking changes as the development is finalized.
 
 ## License
 

@@ -3,7 +3,7 @@
 {{ range $property, $value := .Params.meta }}
   {{ if eq $property "keywords" }}
     <meta itemprop="keywords" content="{{ delimit $value ", " }}">
-  {{ else if in (slice "creator" "position" "genere" "material" "version" "license") $property }}
+  {{ else if in (slice "creator" "position" "genre" "material" "version" "license") $property }}
     <meta itemprop="{{ $property }}" content="{{ $value }}">
   {{ end }}
 {{ end }}
