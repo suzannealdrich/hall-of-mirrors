@@ -1,6 +1,6 @@
 # Hall of Mirrors
 
-> PhotoSwipe Image Gallery for [After Dark]. Hall of Mirrors adds a responsive JavaScript image gallery using [PhotoSwipe](http://photoswipe.com).
+> JavaScript Image Gallery for [After Dark]. Hall of Mirrors adds a responsive image gallery using [PhotoSwipe](http://photoswipe.com).
 
 [![Latest NPM version](https://img.shields.io/npm/v/hall-of-mirrors.svg?style=flat-square)](https://www.npmjs.com/package/hall-of-mirrors)
 [![NPM downloads per month](https://img.shields.io/npm/dm/hall-of-mirrors.svg?style=flat-square)](https://www.npmjs.com/package/hall-of-mirrors)
