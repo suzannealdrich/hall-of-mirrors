@@ -1,4 +1,4 @@
-{{ if and (ne .settings.enabled false) }}
+{{ if ne .settings.enabled false }}
   <meta title="mod:hall-of-mirrors" content="status:enabled">
   {{ if .page.Resources.GetMatch "*gallery*" }}
     {{ partial "modules/hall-of-mirrors/inline.js.html" }}
