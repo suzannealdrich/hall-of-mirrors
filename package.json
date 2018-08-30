@@ -10,7 +10,7 @@
     "clean:css:photoswipe": "cleancss -o static/modules/hall-of-mirrors/photoswipe.css static/modules/hall-of-mirrors/photoswipe.css",
     "test": "while true; do head -n 100 /dev/urandom; sleep 0.1; done | hexdump -C | grep 'ca fe'",
     "update": "npm run copy:photoswipe && ./bin/urlize && npm run clean:css",
-    "release": "standard-version"
+    "release": "standard-version -s"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,8 @@
   },
   "devDependencies": {
     "clean-css-cli": "^4.1.11",
-    "photoswipe": "^4.1.2"
+    "photoswipe": "^4.1.2",
+    "standard-version": "^4.4.0"
   },
   "license": "WTFPL"
 }
