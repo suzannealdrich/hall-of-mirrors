@@ -30,7 +30,12 @@
 
 
     {{/* NOTE: BEGIN MODULE CUSTOM */}}
-    {{ partial "modules/hall-of-mirrors/gallery.html" . }}
+    {{/* TODO: refactor out of this file */}}
+    {{ if and .Site.Params.modules.hall_of_mirrors (ne .Site.Params.modules.hall_of_mirrors.settings.enabled false) }}
+      {{ if .Resources.GetMatch "*gallery*" }}
+        {{ partial "modules/hall-of-mirrors/gallery.html" . }}
+      {{ end }}
+    {{ end }}
     {{/* NOTE: END MODULE CUSTOM */}}
 
 
@@ -55,7 +60,12 @@
 
 
   {{/* NOTE: BEGIN MODULE CUSTOM */}}
-  {{ partial "modules/hall-of-mirrors/pswp.html" . }}
+  {{/* TODO: refactor out of this file */}}
+  {{ if and .Site.Params.modules.hall_of_mirrors (ne .Site.Params.modules.hall_of_mirrors.settings.enabled false) }}
+    {{ if .Resources.GetMatch "*gallery*" }}
+      {{ partial "modules/hall-of-mirrors/pswp.html" . }}
+    {{ end }}
+  {{ end }}
   {{/* NOTE: END MODULE CUSTOM */}}
 
 
