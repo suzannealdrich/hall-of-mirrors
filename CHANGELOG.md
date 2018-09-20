@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.4"></a>
+## [0.1.4](https://codeberg.org/vhs/hall-of-mirrors/compare/v0.1.3...v0.1.4) (2018-09-20)
+
+
+### Bug Fixes
+
+* **post/layouts:** move module partials under flag ([ce7bcb8](https://codeberg.org/vhs/hall-of-mirrors/commits/ce7bcb8)), closes [#15](https://codeberg.org/vhs/hall-of-mirrors/issues/15)
+
+
+
 <a name="0.1.3"></a>
 ## [0.1.3](https://codeberg.org/vhs/hall-of-mirrors/compare/v0.1.2...v0.1.3) (2018-08-30)
 
