@@ -34,7 +34,7 @@ None required, unless you're hosting your site root from a path including a `/` 
 
     ```toml
     [params.modules.hall_of_mirrors]
-      enabled = true # Required in version 0.1.x
+      enabled = true # Required in version 0.x.x
     ```
 
 4. Create a [Leaf Bundle] for your images and content.
