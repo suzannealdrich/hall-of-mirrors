@@ -1,6 +1,27 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [0.2.0](https://codeberg.org/vhs/hall-of-mirrors/compare/v0.1.4...v0.2.0) (2019-05-09)
+
+
+### Bug Fixes
+
+* **layouts/post:** add support for after-dark@7 layout refactoring ([65de9db](https://codeberg.org/vhs/hall-of-mirrors/commit/65de9db)), closes [#24](https://codeberg.org/vhs/hall-of-mirrors/issues/24)
+
+
+### Build System
+
+* **npm:** add script for conventional commits ([8ee714e](https://codeberg.org/vhs/hall-of-mirrors/commit/8ee714e))
+* **npm:** make after-dark an optional dependency ([fb11d39](https://codeberg.org/vhs/hall-of-mirrors/commit/fb11d39))
+* **npm:** upgrade standard-version dev dep ([226b6e8](https://codeberg.org/vhs/hall-of-mirrors/commit/226b6e8))
+
+
+### Features
+
+* add after-dark gpg signed relase tags ([dc4c37d](https://codeberg.org/vhs/hall-of-mirrors/commit/dc4c37d))
+
+
 
 <a name="0.1.4"></a>
 ## [0.1.4](https://codeberg.org/vhs/hall-of-mirrors/compare/v0.1.3...v0.1.4) (2018-09-20)
