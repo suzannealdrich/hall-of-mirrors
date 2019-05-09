@@ -3,6 +3,12 @@
   "version": "0.1.4",
   "description": "PhotoSwipe Image Gallery for After Dark.",
   "author": "VHS <0xc000007b@tutanota.com>",
+  "homepage": "https://vhs.codeberg.page/after-dark/module/hall-of-mirrors/",
+  "standard-version": {
+    "scripts": {
+      "posttag": "git tag --sign $(git describe --tags $(git rev-list --tags --max-count=1)) $(git describe --tags $(git rev-list --tags --max-count=1))^{} -f -m \"$(git log -1 --pretty=%B)\" -m \"-----BEGIN DIST INTEGRITY-----\" -m \"$(npm pack --dry-run --json . | grep integrity | cut -d ',' -f1 | cut -d ':' -f2 | tr -d '\" ')\" -m \"-----END DIST INTEGRITY-----\""
+    }
+  },
   "scripts": {
     "copy:photoswipe": "./bin/copy",
     "clean:css": "npm run clean:css:default-skin && npm run clean:css:photoswipe",
