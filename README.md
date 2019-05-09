@@ -109,11 +109,11 @@ Please squash commits and use [Convention Commit](https://www.conventionalcommit
 
 ## Rights
 
-Copyright (C) 2018 VHS <0xc000007b@tutanota.com>
+Copyright (C) 2018, 2019 by VHS <0xc000007b@tutanota.com>
 
-This work is free. You can redistribute it and/or modify it under the
-terms of the Do What The Fuck You Want To Public License, Version 2,
-as published by Sam Hocevar. See the COPYING file for more details.
+Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted.
+
+The text of the above license is included in the file COPYING in the source.
 
 [After Dark]: https://codeberg.org/vhs/after-dark/
 [Leaf Bundle]: https://gohugo.io/content-management/page-bundles/#leaf-bundles
