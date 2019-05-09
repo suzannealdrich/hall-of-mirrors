@@ -103,7 +103,11 @@ Add captions and enhance SEO by configuring individual resources:
 
 This should get you started. Expect some breaking changes as the development is finalized.
 
-## License
+## Contributing
+
+Please squash commits and use [Convention Commit](https://www.conventionalcommits.org/) messages. Run `npm run commit` after installing NPM dev dependencies for help creating conventional commit messages.k
+
+## Rights
 
 Copyright (C) 2018 VHS <0xc000007b@tutanota.com>
 
