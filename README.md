@@ -5,7 +5,7 @@
 [![Latest NPM version](https://img.shields.io/npm/v/hall-of-mirrors.svg?style=flat-square)](https://www.npmjs.com/package/hall-of-mirrors)
 [![NPM downloads per month](https://img.shields.io/npm/dm/hall-of-mirrors.svg?style=flat-square)](https://www.npmjs.com/package/hall-of-mirrors)
 [![Minimum After Dark version](https://img.shields.io/badge/dynamic/json.svg?url=https://codeberg.org/vhs/hall-of-mirrors/raw/branch/master/package.json&label=after%20dark&query=$..['after-dark']&colorB=000000&style=flat-square&longCache=false&maxAge=86400)](https://codeberg.org/vhs/after-dark/)
-[![WTFPL licensed](https://img.shields.io/npm/l/hall-of-mirrors.svg?style=flat-square&longCache=true)](https://codeberg.org/vhs/hall-of-mirrors/src/branch/master/COPYING)
+[![0BSD licensed](https://img.shields.io/npm/l/hall-of-mirrors.svg?style=flat-square&longCache=true)](https://codeberg.org/vhs/hall-of-mirrors/src/branch/master/COPYING)
 
 ## Demo
 
@@ -105,7 +105,7 @@ This should get you started. Expect some breaking changes as the development is 
 
 ## Contributing
 
-Please squash commits and use [Convention Commit](https://www.conventionalcommits.org/) messages. Run `npm run commit` after installing NPM dev dependencies for help creating conventional commit messages.k
+Please squash commits and use [Convention Commit](https://www.conventionalcommits.org/) messages. Run `npm run commit` after installing NPM dev dependencies for help creating conventional commit messages.
 
 ## Rights
 
