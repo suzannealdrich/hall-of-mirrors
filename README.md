@@ -10,8 +10,8 @@
 ## Demo
 
 <video controls>
-  <source src="https://vhs.keybase.pub/after-dark-hall-of-mirrors-demo.mp4" type="video/mp4">
-  <p>Your browser doesn't support HTML5 video. Here is a <a href="https://vhs.keybase.pub/after-dark-hall-of-mirrors-demo.mp4">link to the video</a> instead. Ref: <a href="https://discourse.gitea.io/t/embedding-videos-in-readmes/494">embedding-videos-in-readmes</a></p>
+  <source src="https://vhs.codeberg.page/code/after-dark/assets/after-dark-hall-of-mirrors-demo.mp4" type="video/mp4">
+  <p>Your browser doesn't support HTML5 video. Here is a <a href="https://vhs.codeberg.page/code/after-dark/assets/after-dark-hall-of-mirrors-demo.mp4">link to the video</a> instead. Ref: <a href="https://discourse.gitea.io/t/embedding-videos-in-readmes/494">embedding-videos-in-readmes</a></p>
 </video>
 
 ## Setup
