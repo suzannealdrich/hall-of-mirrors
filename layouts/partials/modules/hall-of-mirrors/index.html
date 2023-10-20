@@ -3,7 +3,8 @@
   {{ if .page.Resources.GetMatch "*gallery*" }}
     {{ partial "modules/hall-of-mirrors/inline.js.html" }}
     {{ partial "modules/hall-of-mirrors/inline.css.html" }}
-    <script>
+    <script type="module">
+      import fetchInject from '{{ "/js/modules/fetch-inject.min.js" | relURL }}';
       fetchInject([
         {{ "modules/hall-of-mirrors/photoswipe.css" | relURL }},
         {{ "modules/hall-of-mirrors/default-skin.css" | relURL }},
